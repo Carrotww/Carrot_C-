@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/hyeongcode/Carrot_C++",
-      "program": "c:/hyeongcode/Carrot_C++/build/Debug/outDebug",
+      "cwd": "c:/hyeongcode/Carrot_cpp",
+      "program": "c:/hyeongcode/Carrot_cpp/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
