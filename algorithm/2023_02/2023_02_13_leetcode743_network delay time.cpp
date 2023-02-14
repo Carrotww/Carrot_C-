@@ -13,8 +13,13 @@ class Solution {
         {
             for(int j=0; j < t_v[0].size(); j++)
             {
-                cout << t_v[i][j] << endl;
+                // cout << t_v[i][j] << endl;
             }
+        }
+
+        for(int i=0; i < path.size(); i++)
+        {
+            cout << path[i] << endl;
         }
     }
 };
@@ -31,7 +36,7 @@ int main(void) {
 
     Solution temp2;
 
-    temp2.networkDelayTime({{1, 2, 3}, {1, 2, 3}}, 1, 1);
+    temp2.networkDelayTime({{1, 2, 3}, {1, 2, 3}}, 5, 10);
 
     return 0;
 }
