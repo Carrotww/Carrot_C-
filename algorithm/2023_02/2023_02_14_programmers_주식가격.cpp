@@ -31,6 +31,29 @@ vector<int> solution(vector<int> prices) {
     return vt;
 }
 
+vector<int> solution2(vector<int> prices) {
+    stack<vector<int, int>> stack;
+    vector<int> vt(prices.size(), 0);
+
+    for(int i=0; i<prices.size(); i++)
+    {
+        while(!stack.empty() && stack.top()[1] > prices[i])
+        {
+            vt[stack.top()[0]] = i - stack.top()[0];
+            stack.pop();
+        }
+        stack.push({i, prices[i]});
+    }
+
+    while(!stack.empty())
+    {
+        vt[stack.top()[0]] = prices.size() - 1 - stack.top()[0];
+        stack.pop();
+    }
+
+    return vt;
+}
+
 int main(void) {
     vector<int> result = solution({1, 2, 3, 2, 3});
     for(int i=0; i<result.size(); i++)
