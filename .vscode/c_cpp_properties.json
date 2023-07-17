@@ -2,13 +2,16 @@
   "configurations": [
     {
       "name": "windows-gcc-x86",
-      "includePath": ["${workspaceFolder}/**"],
-      "compilerPath": "C://MinGW//bin//gcc.exe",
-      "cStandard": "${default}",
-      "cppStandard": "${default}",
+      "includePath": [
+        "${workspaceFolder}/**"
+      ],
+      "compilerPath": "C:/MinGW/bin/gcc.exe",
+      "cStandard": "c11",
+      "cppStandard": "c++11",
       "intelliSenseMode": "windows-gcc-x86",
-      "compilerArgs": [""],
-      "configurationProvider": "ms-vscode.cmake-tools"
+      "compilerArgs": [
+        ""
+      ]
     }
   ],
   "version": 4
